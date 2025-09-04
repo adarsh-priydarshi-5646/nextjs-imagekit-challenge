@@ -1,10 +1,11 @@
 import "./src/env";
 
-import type {NextConfig} from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   images: {
     remotePatterns: [{hostname: "ik.imagekit.io"}],
+  },
+  experimental: {
+    serverExternalPackages: ["pino"],
   },
 };
 
